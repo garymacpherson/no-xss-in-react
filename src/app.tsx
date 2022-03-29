@@ -11,22 +11,23 @@ import { Warning } from './warning'
 function App() {
   return (
     <div className="App">
-      <Warning />
       <header className="App-header">
-        <div className="App-title">
-          "React is XSS safe"
-        </div>
-        <div className="App-sub-title">
-          An example in React 17
-        </div>
-        <a className="GithubLink" href="https://github.com/garymacpherson/no-xss-in-react">https://github.com/garymacpherson/no-xss-in-react</a>
-        <div className="Info">
-          <div>
-            This page stands as an example of why XSS is still a concern in React 17.
-          </div>
-          <div>
-            PRs with new XSS vectors in React 17+ are always welcome at the repo above.
-          </div>
+        <h1 className="App-title">
+          "React prevents <strong>all</strong> XSS"
+        </h1>
+        <h2 className="App-subtitle">
+          Some contradictory examples
+        </h2>
+        <div className="App-info">
+          <strong><span className="Warning">WARNING:</span> this page contains multiple XSS vulnerabilities, please be careful.</strong>
+          <p>
+            React does prevent a lot of Cross-Site Scripting (XSS) vulnerabilities. However, this page contains a few examples of why XSS is still a concern when handling untrusted input.
+          </p>
+          <p>
+            Pull Requests with new XSS vectors in React 17+ are always welcome on Github <a className="GithubLink" href="https://github.com/garymacpherson/no-xss-in-react">here</a>.
+          </p>
+          <p>
+          </p>
         </div>
       </header>
       <div className="Vulnerabilities">
@@ -37,8 +38,7 @@ function App() {
         <FormComponent />
         <FunctionComponent />
       </div>
-      <Warning />
-      <div className="BottomLink">
+      <div className="App-footer">
         Brought to you by <a href='https://appsecstudio.com/'>appsecstudio.com</a>
       </div>
     </div>

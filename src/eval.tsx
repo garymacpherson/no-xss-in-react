@@ -9,14 +9,10 @@ export const EvalComponent: React.FC = () => {
 
   return (
     <div className='Vulnerability'>
-      <div className='Vuln-header'>
-        XSS via eval()
-      </div>
-      Eval result: 5 * 25 = {eval(evalString)}
-      <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a></div>
-      <div className='Gist'>
-        <Gist id='e27cbb5a12e7b0fd6cc5f66fc99b0c21' />
-      </div>
+      <h3>eval()</h3>
+      <p>Eval result: 5 * 25 = {eval(evalString)}</p>
+      <p>Try browsing to <a href={guideUrl}>{guideUrl}</a>.</p>
+      <Gist id='e27cbb5a12e7b0fd6cc5f66fc99b0c21' />
     </div>
   )
 }

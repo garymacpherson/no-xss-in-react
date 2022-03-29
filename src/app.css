@@ -2,86 +2,72 @@
   text-align: center;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 50px;
+  padding: 4rem;
+  background-color: #282c34;
   color: white;
 }
 
 .App-title {
-  margin-top: 40px;
+  font-size: 3rem;
 }
 
-.App-sub-title {
-  font-size: 20px;
-  margin-bottom: 40px;
+.App-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.App-info {
+  max-width: 60rem;
+  font-size: 1.15rem;
 }
 
 .Warning {
-  margin: 20px;
-  height: 110px;
-}
-
-.WarningText {
   color: red;
-  font-size: large;
-  font-weight: bold;
 }
 
 .Vulnerabilities {
-  background-color: #cacccf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding-bottom: 4rem;
 }
 
 .Vulnerability {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-bottom: 1px solid #ffffff;
+  padding-top: 4rem;
+  font-size: 1.15rem;
+  max-width: 60rem;
+  width: 100%;
 }
 
-.Vuln-header {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.Vuln-guide {
-  margin-top: 10px;
-}
-
-.Gist {
-  padding-top: 20px;
-  margin: auto;
-  width: 1000px;
+.Vulnerability h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .GithubLink {
-  margin: 20px;
-  font-size: 30px;
   color: #61dafb;
 }
 
-.Info {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.BottomLink {
-  background-color: #282c34;
-  height: 100px;
-  color: white;
+.App-footer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #282c34;
+  color: white;
+  font-size: 1.15rem;
 }
 
-.BottomLink a {
-  margin-left: 5px;
-  margin-bottom: 2px;
-  text-decoration: none;
-  font-size: 20px;
+.App-footer a {
   color: red;
+  padding-left: .25rem;
 }
