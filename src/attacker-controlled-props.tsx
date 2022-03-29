@@ -6,18 +6,14 @@ export const AttackerControlledPropsComponent: React.FC = () => {
   var props = qs.parse(window.location.search, { ignoreQueryPrefix: true }).props as string ?? "{}"
   var propsObject = JSON.parse(props)
 
-  var guideUrl = "https://noxssinreact.com/?props={\"dangerouslySetInnerHTML\":{\"__html\":\"<img onerror='alert(\\\"props based XSS\\\");' src='invalid-image' />\"}}"
+  var guideUrl = window.location.origin + "/?props={\"dangerouslySetInnerHTML\":{\"__html\":\"<img onerror='alert(\\\"props based XSS\\\");' src='invalid-image' />\"}}"
 
   return (
     <div className='Vulnerability'>
-      <div className='Vuln-header'>
-        XSS via attacker controlled component props
-      </div>
+      <h3>Controllable Component Props</h3>
       <div {...propsObject} />
-      <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a></div>
-      <div className='Gist'>
-        <Gist id='1045ef473837aab8a87c3673f54cb656' />
-      </div>
+      <p>Try browsing to <a href={guideUrl}>{guideUrl}</a></p>
+      <Gist id='1045ef473837aab8a87c3673f54cb656' />
     </div>
   )
 }
