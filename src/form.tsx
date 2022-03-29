@@ -17,7 +17,7 @@ export const FormComponent: React.FC = () => {
       </form>
       <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a> then click on the above form submit button</div>
       <div className='Gist'>
-        <Gist id='3db147e0d005e92d66e679173a4354fb' />
+        <Gist id='89c9c8fcf0e6bc20cf5950e56c31e338' />
       </div>
     </div>
   )

@@ -13,12 +13,21 @@ function App() {
     <div className="App">
       <Warning />
       <header className="App-header">
-        <p>
+        <div className="App-title">
           "React is XSS safe"
-        </p>
-        <p className="App-sub-header">
+        </div>
+        <div className="App-sub-title">
           An example in React 17
-        </p>
+        </div>
+        <a className="GithubLink" href="https://github.com/garymacpherson/no-xss-in-react">https://github.com/garymacpherson/no-xss-in-react</a>
+        <div className="Info">
+          <div>
+            This page stands as an example of why XSS is still a concern.
+          </div>
+          <div>
+            PRs with new XSS vectors in React 17+ are always welcome at the repo above.
+          </div>
+        </div>
       </header>
       <div className="Vulnerabilities">
         <AhrefComponent />

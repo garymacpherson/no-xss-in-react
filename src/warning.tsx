@@ -11,7 +11,7 @@ export const Warning: React.FC = () => {
       </div>
       <br />
       <div>
-        If anyone sent you this website with any path or query params (anything after noxssinreact.com),
+        If anyone sent you to this website with any path or query params (anything after https://noxssinreact.com),
       </div>
       <div>
         then they are trying to ruin your day and they are not your friend.

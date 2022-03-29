@@ -15,7 +15,7 @@ export const EvalComponent: React.FC = () => {
       Eval result: 5 * 25 = {eval(evalString)}
       <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a></div>
       <div className='Gist'>
-        <Gist id='3db147e0d005e92d66e679173a4354fb' />
+        <Gist id='e27cbb5a12e7b0fd6cc5f66fc99b0c21' />
       </div>
     </div>
   )

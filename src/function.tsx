@@ -16,7 +16,7 @@ export const FunctionComponent: React.FC = () => {
       function result: 5 * 25 = {func()}
       <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a></div>
       <div className='Gist'>
-        <Gist id='3db147e0d005e92d66e679173a4354fb' />
+        <Gist id='4c80c399f551722dba40e0b9aa55cdf4' />
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ export const DangerouslySetInnerHTMLComponent: React.FC = () => {
       <div dangerouslySetInnerHTML={{ "__html": dangerously }} />
       <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a></div>
       <div className='Gist'>
-        <Gist id='3db147e0d005e92d66e679173a4354fb' />
+        <Gist id='942f7b23bc4d77cb8710d1afe61812d5' />
       </div>
     </div>
   )

@@ -16,7 +16,7 @@ export const AttackerControlledPropsComponent: React.FC = () => {
       <div {...propsObject} />
       <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a></div>
       <div className='Gist'>
-        <Gist id='3db147e0d005e92d66e679173a4354fb' />
+        <Gist id='1045ef473837aab8a87c3673f54cb656' />
       </div>
     </div>
   )

@@ -24,8 +24,14 @@
   color: white;
 }
 
-.App-sub-header {
+
+.App-title {
+  margin-top: 40px;
+}
+
+.App-sub-title {
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 .App-link {
@@ -75,4 +81,15 @@
   padding-top: 20px;
   margin: auto;
   width: 1000px;
+}
+
+.GithubLink {
+  margin: 20px;
+  font-size: 30px;
+  color: #61dafb;
+}
+
+.Info {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
