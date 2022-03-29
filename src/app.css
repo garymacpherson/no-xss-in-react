@@ -93,3 +93,20 @@
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+.BottomLink {
+  background-color: #282c34;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BottomLink a {
+  margin-left: 5px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  font-size: 20px;
+  color: red;
+}

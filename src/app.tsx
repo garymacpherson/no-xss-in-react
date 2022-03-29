@@ -38,6 +38,9 @@ function App() {
         <FunctionComponent />
       </div>
       <Warning />
+      <div className="BottomLink">
+        Brought to you by <a href='https://appsecstudio.com/'>appsecstudio.com</a>
+      </div>
     </div>
   )
 }
