@@ -4,7 +4,7 @@ import React from 'react'
 export const FormComponent: React.FC = () => {
   var form = qs.parse(window.location.search, { ignoreQueryPrefix: true }).form as string ?? "safe string"
 
-  var guideUrl = "http://localhost:3000/?form=javascript:alert('form action based XSS');"
+  var guideUrl = "http://noxssinreact.com/?form=javascript:alert('form action based XSS');"
 
   return (
     <div className='Vulnerability'>

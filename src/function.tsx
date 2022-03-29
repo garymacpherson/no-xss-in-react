@@ -5,7 +5,7 @@ export const FunctionComponent: React.FC = () => {
   var funcString = qs.parse(window.location.search, { ignoreQueryPrefix: true }).func as string ?? "return (5 * 25)"
   const func = new Function(funcString);
 
-  var guideUrl = "http://localhost:3000/?func=javascript:alert('function() based xss');"
+  var guideUrl = "http://noxssinreact.com/?func=javascript:alert('function() based xss');"
 
   return (
     <div className='Vulnerability'>

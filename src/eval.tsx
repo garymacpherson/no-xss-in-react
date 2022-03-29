@@ -4,7 +4,7 @@ import React from 'react'
 export const EvalComponent: React.FC = () => {
   var evalString = qs.parse(window.location.search, { ignoreQueryPrefix: true }).eval as string ?? "5 * 25"
 
-  var guideUrl = "http://localhost:3000/?eval=alert('eval based XSS')"
+  var guideUrl = "http://noxssinreact.com/?eval=alert('eval based XSS')"
 
   return (
     <div className='Vulnerability'>

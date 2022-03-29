@@ -4,7 +4,7 @@ import React from 'react'
 export const DangerouslySetInnerHTMLComponent: React.FC = () => {
   var dangerously = qs.parse(window.location.search, { ignoreQueryPrefix: true }).dangerously as string ?? "Safe string"
 
-  var guideUrl = "http://localhost:3000/?dangerously=<img onerror='alert(\"dangerouslySetInnerHTML based XSS\");' src='invalid-image' />"
+  var guideUrl = "http://noxssinreact.com/?dangerously=<img onerror='alert(\"dangerouslySetInnerHTML based XSS\");' src='invalid-image' />"
 
   return (
     <div className='Vulnerability'>
