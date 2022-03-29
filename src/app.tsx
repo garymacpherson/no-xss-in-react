@@ -1,6 +1,6 @@
 import React from 'react'
-import { AhrefComponent } from './a-href'
 import './app.css'
+import { AhrefComponent } from './a-href'
 import { AttackerControlledPropsComponent } from './attacker-controlled-props'
 import { FormComponent } from './form'
 import { DangerouslySetInnerHTMLComponent } from './dangerously-set'
@@ -16,7 +16,18 @@ function App() {
         <p>
           "React is XSS safe"
         </p>
+        <p className="App-sub-header">
+          An example in React 17
+        </p>
       </header>
+      <div className="Vulnerabilities">
+        <AhrefComponent />
+        <AttackerControlledPropsComponent />
+        <DangerouslySetInnerHTMLComponent />
+        <EvalComponent />
+        <FormComponent />
+        <FunctionComponent />
+      </div>
       <Warning />
     </div>
   )

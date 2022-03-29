@@ -1,11 +1,20 @@
+import qs from 'qs'
 import React from 'react'
 
-const payload = "javascript:alert('form');"
-
 export const FormComponent: React.FC = () => {
+  var form = qs.parse(window.location.search, { ignoreQueryPrefix: true }).form as string ?? "safe string"
+
+  var guideUrl = "http://localhost:3000/?form=javascript:alert('form action based XSS');"
+
   return (
-    <form name='form1' action={payload} method="POST">
-      <input type="submit" />
-    </form>
+    <div className='Vulnerability'>
+      <div className='Vuln-header'>
+        XSS via form action
+      </div>
+      <form name='form1' action={form} method="GET">
+        <input type="submit" />
+      </form>
+      <div className='Vuln-guide'>Try browsing to <a href={guideUrl}>{guideUrl}</a> then click on the above form submit button</div>
+    </div>
   )
 }
