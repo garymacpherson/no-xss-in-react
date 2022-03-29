@@ -13,9 +13,7 @@ export const AhrefComponent: React.FC = () => {
       </h3>
       <a href={ahref}>Click me!</a>
       <p>Try browsing to <a href={guideUrl}>{guideUrl}</a> and then clicking on the above link.</p>
-      <div className='Gist'>
-        <Gist id='3db147e0d005e92d66e679173a4354fb' />
-      </div>
+      <Gist id='3db147e0d005e92d66e679173a4354fb' />
     </div>
   )
 }
