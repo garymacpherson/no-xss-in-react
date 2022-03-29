@@ -22,7 +22,7 @@ function App() {
         <a className="GithubLink" href="https://github.com/garymacpherson/no-xss-in-react">https://github.com/garymacpherson/no-xss-in-react</a>
         <div className="Info">
           <div>
-            This page stands as an example of why XSS is still a concern.
+            This page stands as an example of why XSS is still a concern in React 17.
           </div>
           <div>
             PRs with new XSS vectors in React 17+ are always welcome at the repo above.
