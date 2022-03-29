@@ -5,7 +5,7 @@ import Gist from 'react-gist'
 export const FormComponent: React.FC = () => {
   var form = qs.parse(window.location.search, { ignoreQueryPrefix: true }).form as string ?? "safe string"
 
-  var guideUrl = "http://noxssinreact.com/?form=javascript:alert('form action based XSS');"
+  var guideUrl = "https://noxssinreact.com/?form=javascript:alert('form action based XSS');"
 
   return (
     <div className='Vulnerability'>

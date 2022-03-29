@@ -5,7 +5,7 @@ import Gist from 'react-gist'
 export const AhrefComponent: React.FC = () => {
   var ahref = qs.parse(window.location.search, { ignoreQueryPrefix: true }).ahref as string ?? ""
 
-  var guideUrl = "http://noxssinreact.com/?ahref=javascript:alert(%27a%20href%20based%20XSS%27);"
+  var guideUrl = "https://noxssinreact.com/?ahref=javascript:alert(%27a%20href%20based%20XSS%27);"
   return (
     <div className='Vulnerability'>
       <div className='Vuln-header'>
