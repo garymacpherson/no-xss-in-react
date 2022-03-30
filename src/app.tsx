@@ -6,7 +6,6 @@ import { FormComponent } from './form'
 import { DangerouslySetInnerHTMLComponent } from './dangerously-set'
 import { EvalComponent } from './eval'
 import { FunctionComponent } from './function'
-import { Warning } from './warning'
 
 function App() {
   return (
