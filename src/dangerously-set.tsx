@@ -5,7 +5,7 @@ import Gist from 'react-gist'
 export const DangerouslySetInnerHTMLComponent: React.FC = () => {
   var dangerously = qs.parse(window.location.search, { ignoreQueryPrefix: true }).dangerously as string ?? "Safe string"
 
-  var guideUrl =  window.location.origin + "/?dangerously=<img onerror='alert(\"dangerouslySetInnerHTML based XSS\");' src='invalid-image' />"
+  var guideUrl = window.location.origin + "/?dangerously=<img onerror='alert(\"dangerouslySetInnerHTML based XSS\");' src='invalid-image' />"
 
   return (
     <div className='Vulnerability'>
